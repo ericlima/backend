@@ -1,4 +1,4 @@
-const url = 'mongodb://localhost/card'
+const url = 'mongodb://localhost/cards'
 
 const mongoose = require('mongoose')
 
