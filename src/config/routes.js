@@ -1,13 +1,13 @@
 const express = require('express')
 
-module.exports = function(server) {
+module.exports = (server) => {
 
-    const router = express.Router()
+    const rota = express.Router()
 
-    server.use('/api', router)
+    server.use('/api', rota)
 
-    const escolaService = require('../api/card/escolaService')
+    const Escola = require('../api/card/escolaService')
 
-    escolaService.register(router, '/escola')
+    Escola.register(rota, '/escola')
 
 }
