@@ -11,7 +11,5 @@ server.use(bodyParser.urlencoded({
 server.use(bodyParser.json)
 
 server.listen(port, function() {
-    console.log(`running at port: ${port}`)
+    console.log(`running ar ${port}`)
 })
-
-module.exports = server
