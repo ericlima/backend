@@ -7,4 +7,8 @@ module.exports = (server) => {
 
   const Category = require('../api/category/categoryService')
   Category.register(protectedApi, '/categorys')
+
+  const Escola  = require('../api/escolas/escolaService')
+  Escola.register(protectedApi, '/escola')
+
 }
