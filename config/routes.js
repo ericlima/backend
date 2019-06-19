@@ -12,11 +12,9 @@ module.exports = (server) => {
 
   registra('colaborador')
 
-  const grupo = require('../api/grupo/grupoService')
-  grupo.register(protectedApi,'/grupo')
+  registra('usuario')
 
-  const usuario = require('../api/usuario/usuarioService')
-  usuario.register(protectedApi,'/usuario')
+  registra('grupo')
   
   
 
