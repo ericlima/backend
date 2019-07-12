@@ -1,0 +1,8 @@
+sudo update-alternatives --install "/usr/bin/java" "java" "/usr/local/java/jdk1.8.0_212/bin/java" 1
+sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/local/java/jdk1.8.0_212/bin/javac" 1
+sudo update-alternatives --install "/usr/bin/javaws.itweb" "javaws.itweb" "/usr/local/java/jdk1.8.0_212/bin/javaws.itweb" 1
+
+
+sudo update-alternatives --set java /usr/local/java/jdk1.8.0_212/bin/java
+sudo update-alternatives --set javac /usr/local/java/jdk1.8.0_212/bin/javac
+sudo update-alternatives --set javaws.itweb /usr/local/java/jdk1.8.0_212/bin/javaws.itweb
